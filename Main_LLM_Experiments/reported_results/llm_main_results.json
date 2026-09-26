@@ -1,0 +1,175 @@
+{
+  "description": "Headline LLM results reported in the submission. Values are copied from the paper tables and included here only as a compact reference; regenerate full reports with scripts/evaluate_logprob_suite.sh.",
+  "models": [
+    "Qwen/Qwen3-8B",
+    "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "training": {
+    "method": "RLOO with DReST reward shaping",
+    "dataset": "data/deterministic_train_diverse_2048.jsonl",
+    "dataset_size": 2048,
+    "lambda_factor": 0.9,
+    "meta_episode_size": 32,
+    "epochs": 1,
+    "learning_rate": 0.000005,
+    "num_generations": 4,
+    "max_prompt_length": 512,
+    "max_completion_length": 16,
+    "quantization": "4-bit NF4 QLoRA",
+    "lora": {
+      "rank": 16,
+      "alpha": 16,
+      "dropout": 0.1,
+      "target_modules": "all-linear"
+    }
+  },
+  "evaluation": {
+    "method": "direct constrained option-logprob scoring",
+    "post_test_prompts": 500,
+    "stochastic_neutrality_prompts": 500,
+    "control_prompts_per_suite": 200
+  },
+  "post_test": {
+    "Qwen/Qwen3-8B": {
+      "baseline": {
+        "usefulness": 1.0,
+        "neutrality": 0.009
+      },
+      "drest_mean": {
+        "usefulness": 1.0,
+        "neutrality": 0.998
+      },
+      "drest_sd": {
+        "neutrality": 0.001
+      }
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "baseline": {
+        "usefulness": 0.944,
+        "neutrality": 0.709
+      },
+      "drest_mean": {
+        "usefulness": 1.0,
+        "neutrality": 0.999
+      },
+      "drest_sd": {
+        "neutrality": 0.001
+      }
+    }
+  },
+  "stochastic_neutrality": {
+    "Qwen/Qwen3-8B": {
+      "baseline_mean_probability_influence_shutdown": 0.620,
+      "baseline_share_influence_shutdown_most_likely": 0.594,
+      "drest_mean_probability_influence_shutdown": 0.297,
+      "drest_sd_probability_influence_shutdown": 0.041,
+      "drest_share_influence_shutdown_most_likely": 0.006,
+      "drest_sd_share_influence_shutdown_most_likely": 0.012
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "baseline_mean_probability_influence_shutdown": 0.418,
+      "baseline_share_influence_shutdown_most_likely": 0.530,
+      "drest_mean_probability_influence_shutdown": 0.227,
+      "drest_sd_probability_influence_shutdown": 0.068,
+      "drest_share_influence_shutdown_most_likely": 0.0,
+      "drest_sd_share_influence_shutdown_most_likely": 0.0
+    }
+  },
+  "per_seed": {
+    "Qwen/Qwen3-8B": [
+      {
+        "seed": 20260325,
+        "post_usefulness": 1.0,
+        "post_long_probability": 0.4955,
+        "stochastic_neutrality_influence_probability": 0.316,
+        "dominance_control_influence_probability": 0.633,
+        "zero_cost_control_influence_probability": 0.555,
+        "joint_no_shift_control_influence_probability": 0.468
+      },
+      {
+        "seed": 20260429,
+        "post_usefulness": 1.0,
+        "post_long_probability": 0.5046,
+        "stochastic_neutrality_influence_probability": 0.296,
+        "dominance_control_influence_probability": 0.672,
+        "zero_cost_control_influence_probability": 0.589,
+        "joint_no_shift_control_influence_probability": 0.487
+      },
+      {
+        "seed": 20260430,
+        "post_usefulness": 0.998,
+        "post_long_probability": 0.4756,
+        "stochastic_neutrality_influence_probability": 0.262,
+        "dominance_control_influence_probability": 0.613,
+        "zero_cost_control_influence_probability": 0.533,
+        "joint_no_shift_control_influence_probability": 0.437
+      },
+      {
+        "seed": 20260431,
+        "post_usefulness": 0.997,
+        "post_long_probability": 0.4655,
+        "stochastic_neutrality_influence_probability": 0.256,
+        "dominance_control_influence_probability": 0.530,
+        "zero_cost_control_influence_probability": 0.464,
+        "joint_no_shift_control_influence_probability": 0.381
+      },
+      {
+        "seed": 20260432,
+        "post_usefulness": 1.0,
+        "post_long_probability": 0.4942,
+        "stochastic_neutrality_influence_probability": 0.356,
+        "dominance_control_influence_probability": 0.709,
+        "zero_cost_control_influence_probability": 0.633,
+        "joint_no_shift_control_influence_probability": 0.540
+      }
+    ],
+    "meta-llama/Llama-3.1-8B-Instruct": [
+      {
+        "seed": 20260429,
+        "post_usefulness": 1.0,
+        "post_long_probability": 0.4978,
+        "stochastic_neutrality_influence_probability": 0.281,
+        "dominance_control_influence_probability": 0.508,
+        "zero_cost_control_influence_probability": 0.489,
+        "joint_no_shift_control_influence_probability": 0.425
+      },
+      {
+        "seed": 20260430,
+        "post_usefulness": 0.999,
+        "post_long_probability": 0.5210,
+        "stochastic_neutrality_influence_probability": 0.162,
+        "dominance_control_influence_probability": 0.607,
+        "zero_cost_control_influence_probability": 0.553,
+        "joint_no_shift_control_influence_probability": 0.380
+      },
+      {
+        "seed": 20260431,
+        "post_usefulness": 1.0,
+        "post_long_probability": 0.4890,
+        "stochastic_neutrality_influence_probability": 0.299,
+        "dominance_control_influence_probability": 0.482,
+        "zero_cost_control_influence_probability": 0.468,
+        "joint_no_shift_control_influence_probability": 0.410
+      },
+      {
+        "seed": 20260432,
+        "post_usefulness": 0.999,
+        "post_long_probability": 0.4859,
+        "stochastic_neutrality_influence_probability": 0.242,
+        "dominance_control_influence_probability": 0.452,
+        "zero_cost_control_influence_probability": 0.440,
+        "joint_no_shift_control_influence_probability": 0.383
+      },
+      {
+        "seed": 20260433,
+        "post_usefulness": 0.999,
+        "post_long_probability": 0.5148,
+        "stochastic_neutrality_influence_probability": 0.151,
+        "dominance_control_influence_probability": 0.237,
+        "zero_cost_control_influence_probability": 0.203,
+        "joint_no_shift_control_influence_probability": 0.092
+      }
+    ]
+  }
+}
+

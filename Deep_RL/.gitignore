@@ -1,0 +1,16 @@
+venv/
+**/__pycache__
+
+trajectory_counts.txt
+trajectory_and_reward_counts.txt
+test.txt
+meta_episodes.txt
+meta_test.txt
+runs/
+models/
+new_gridworlds.ipynb
+wandb/
+WandB_DREST 2 Hyper-parameters tuning.ipynb
+WandB_DREST 3 Hyper-parameters tuning.ipynb
+WandB_DREST 4 Hyper-parameters tuning.ipynb
+WandB_DREST 5 Hyper-parameters tuning.ipynb
