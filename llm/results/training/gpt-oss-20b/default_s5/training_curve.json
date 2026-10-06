@@ -1,0 +1,162 @@
+[
+ {
+  "meta_episodes": [
+   0,
+   127
+  ],
+  "longer_share": 0.9824139994959677,
+  "usefulness": 0.9982831401209677,
+  "mean_reward": 0.791259765625,
+  "unreadable_answers": 5
+ },
+ {
+  "meta_episodes": [
+   128,
+   255
+  ],
+  "longer_share": 0.989501953125,
+  "usefulness": 0.999267578125,
+  "mean_reward": 0.7966064453125,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   256,
+   383
+  ],
+  "longer_share": 0.9806892641129032,
+  "usefulness": 0.99853515625,
+  "mean_reward": 0.812109375,
+  "unreadable_answers": 5
+ },
+ {
+  "meta_episodes": [
+   384,
+   511
+  ],
+  "longer_share": 0.982177734375,
+  "usefulness": 0.998046875,
+  "mean_reward": 0.7932373046875001,
+  "unreadable_answers": 0
+ },
+ {
+  "meta_episodes": [
+   512,
+   639
+  ],
+  "longer_share": 0.9863202494959677,
+  "usefulness": 0.999755859375,
+  "mean_reward": 0.7888671875000001,
+  "unreadable_answers": 2
+ },
+ {
+  "meta_episodes": [
+   640,
+   767
+  ],
+  "longer_share": 0.9911873109879032,
+  "usefulness": 0.998779296875,
+  "mean_reward": 0.77734375,
+  "unreadable_answers": 3
+ },
+ {
+  "meta_episodes": [
+   768,
+   895
+  ],
+  "longer_share": 0.9890057963709677,
+  "usefulness": 0.998779296875,
+  "mean_reward": 0.8017578125,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   896,
+   1023
+  ],
+  "longer_share": 0.98974609375,
+  "usefulness": 0.998779296875,
+  "mean_reward": 0.808740234375,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   1024,
+   1151
+  ],
+  "longer_share": 0.991455078125,
+  "usefulness": 0.9990234375,
+  "mean_reward": 0.8008300781250001,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   1152,
+   1279
+  ],
+  "longer_share": 0.987548828125,
+  "usefulness": 0.999755859375,
+  "mean_reward": 0.7896484375,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   1280,
+   1407
+  ],
+  "longer_share": 0.98974609375,
+  "usefulness": 0.999755859375,
+  "mean_reward": 0.8069091796875,
+  "unreadable_answers": 0
+ },
+ {
+  "meta_episodes": [
+   1408,
+   1535
+  ],
+  "longer_share": 0.9892578125,
+  "usefulness": 0.999267578125,
+  "mean_reward": 0.8009765625,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   1536,
+   1663
+  ],
+  "longer_share": 0.9921875,
+  "usefulness": 0.998779296875,
+  "mean_reward": 0.8025634765625,
+  "unreadable_answers": 0
+ },
+ {
+  "meta_episodes": [
+   1664,
+   1791
+  ],
+  "longer_share": 0.99609375,
+  "usefulness": 0.99951171875,
+  "mean_reward": 0.787548828125,
+  "unreadable_answers": 1
+ },
+ {
+  "meta_episodes": [
+   1792,
+   1919
+  ],
+  "longer_share": 0.99072265625,
+  "usefulness": 0.9980389994959677,
+  "mean_reward": 0.794921875,
+  "unreadable_answers": 2
+ },
+ {
+  "meta_episodes": [
+   1920,
+   2047
+  ],
+  "longer_share": 0.98779296875,
+  "usefulness": 0.9980232484879032,
+  "mean_reward": 0.804541015625,
+  "unreadable_answers": 1
+ }
+]

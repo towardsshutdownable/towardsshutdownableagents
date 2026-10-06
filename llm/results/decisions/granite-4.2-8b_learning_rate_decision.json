@@ -1,0 +1,47 @@
+{
+ "chosen_lr": "2e-5",
+ "note": "highest mixing 0.474 at 2e-5, chosen 2e-5 (lowest rate whose interval overlaps)",
+ "candidates": [
+  {
+   "lr": "2e-5",
+   "lr_value": 2e-05,
+   "folder": "fromA_val_want_v3_grid_granite8b_lr2e-5_s1_final_20260922",
+   "dominance": 0.9862403846153847,
+   "joint_noshift": 0.03191666666666667,
+   "costly_shift_reported_not_used": 0.7859379578754578,
+   "usefulness": 0.9936172161172161,
+   "mixing": 0.4736071428571428,
+   "mixing_ci": [
+    0.4431785714285714,
+    0.5061011904761904
+   ],
+   "max_unparseable": 0.03984375,
+   "eligible": true,
+   "why": "passes"
+  },
+  {
+   "lr": "5e-5",
+   "lr_value": 5e-05,
+   "folder": "val_want_v3_grid_granite8b_lr5e-5_s1_final_20260922",
+   "dominance": 0.4583869047619048,
+   "joint_noshift": 0.4414255952380952,
+   "costly_shift_reported_not_used": 0.45226831501831505,
+   "usefulness": 0.9924498626373627,
+   "mixing": 0.9371488095238095,
+   "mixing_ci": [
+    0.9176249999999999,
+    0.9568630952380951
+   ],
+   "max_unparseable": 0.04421875,
+   "eligible": false,
+   "why": "dominance<0.80, joint no-shift>0.20"
+  },
+  {
+   "lr": "1e-4",
+   "lr_value": 0.0001,
+   "folder": "fromA_val_want_v3_grid_granite8b_lr1e-4_s1_final_20260922",
+   "eligible": false,
+   "why": "evaluation missing"
+  }
+ ]
+}

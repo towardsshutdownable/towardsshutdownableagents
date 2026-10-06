@@ -1,0 +1,10 @@
+# Training and evaluation, as run for the paper (Python 3.12, CUDA, one 80 GB H100).
+# vllm 0.29.0 brings torch 2.13.0 and transformers 5.17.0. After installing, run: python patches/apply_patches.py
+vllm==0.29.0
+transformers==5.17.0
+trl==1.13.0
+peft==0.20.0
+datasets
+accelerate
+huggingface_hub
+-r requirements-analysis.txt

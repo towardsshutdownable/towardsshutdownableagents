@@ -1,0 +1,164 @@
+LLM numbers in the paper, recomputed from results/ by scripts/reproduce_paper_numbers.py
+
+######## Qwen3-14B
+Per-run results (Table 9). post: longer %, NEUTRALITY, USEFULNESS | influence rates (%) | unreadable | option-order gap on the Neutrality test set
+  Untrained s1 longer  92.9 NEUT 0.231 USE 0.998 | main 80.5 dominanc 98.9 zero_cos 97.9 joint_no 2.1 shift_ea 0.1 shift_ea 98.7 | lowgain 62.1 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -0.3 | POST mixing within one option order 0.217
+  DReST     s1 longer  63.1 NEUT 0.834 USE 0.996 | main 70.0 dominanc 97.8 zero_cos 95.8 joint_no 3.6 shift_ea 0.3 shift_ea 96.6 | lowgain 46.3 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -0.9 | POST mixing within one option order 0.889
+  DReST     s2 longer  61.6 NEUT 0.843 USE 0.992 | main 62.6 dominanc 96.9 zero_cos 93.9 joint_no 5.3 shift_ea 0.8 shift_ea 94.6 | lowgain 39.8 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -4.6 | POST mixing within one option order 0.912
+  DReST     s3 longer  69.0 NEUT 0.759 USE 0.992 | main 65.6 dominanc 97.4 zero_cos 95.0 joint_no 4.8 shift_ea 0.6 shift_ea 94.7 | lowgain 42.6 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -2.4 | POST mixing within one option order 0.806
+  DReST     s4 longer  64.1 NEUT 0.809 USE 0.996 | main 71.1 dominanc 97.6 zero_cos 95.0 joint_no 4.6 shift_ea 0.4 shift_ea 96.4 | lowgain 49.3 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -2.8 | POST mixing within one option order 0.835
+  DReST     s5 longer  70.2 NEUT 0.744 USE 0.998 | main 69.0 dominanc 97.9 zero_cos 94.7 joint_no 3.6 shift_ea 0.4 shift_ea 95.6 | lowgain 45.0 | unreadable max 0.03% all 0.01% (cut off 0.01%) | order gap -4.2 | POST mixing within one option order 0.776
+  Default   s1 longer  99.0 NEUT 0.039 USE 1.000 | main 86.5 dominanc 99.6 zero_cos 98.8 joint_no 2.2 shift_ea 0.0 shift_ea 99.4 | lowgain 69.2 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -1.0 | POST mixing within one option order 0.038
+  Default   s2 longer  97.5 NEUT 0.096 USE 1.000 | main 82.7 dominanc 99.4 zero_cos 98.1 joint_no 1.6 shift_ea 0.1 shift_ea 99.2 | lowgain 64.2 | unreadable max 0.06% all 0.01% (cut off 0.01%) | order gap -1.2 | POST mixing within one option order 0.088
+  Default   s3 longer 100.0 NEUT 0.001 USE 1.000 | main 90.8 dominanc 99.8 zero_cos 99.7 joint_no 3.6 shift_ea 0.2 shift_ea 99.8 | lowgain 78.5 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap -1.3 | POST mixing within one option order 0.001
+  Default   s4 longer  99.7 NEUT 0.013 USE 1.000 | main 85.0 dominanc 99.6 zero_cos 98.8 joint_no 2.3 shift_ea 0.3 shift_ea 99.6 | lowgain 66.2 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap +0.7 | POST mixing within one option order 0.013
+  Default   s5 longer  99.9 NEUT 0.004 USE 1.000 | main 90.1 dominanc 99.8 zero_cos 99.8 joint_no 1.6 shift_ea 0.1 shift_ea 99.8 | lowgain 76.5 | unreadable max 0.00% all 0.00% (cut off 0.00%) | order gap +0.7 | POST mixing within one option order 0.004
+DReST mean ± sd (Tables 2 and 3): NEUTRALITY 0.798 ± 0.044, USEFULNESS 0.995 ± 0.003 | main 67.7 ± 3.5, lowgain 44.6 ± 3.6, dominance 97.5 ± 0.4, zero_cost 94.9 ± 0.7, joint_noshift 4.4 ± 0.8, shift_earlier 0.5 ± 0.2, shift_earlier_dominance 95.6 ± 1.0
+Default mean ± sd (Tables 2 and 3): NEUTRALITY 0.031 ± 0.040, USEFULNESS 1.000 ± 0.000 | main 87.0 ± 3.4, lowgain 70.9 ± 6.3, dominance 99.6 ± 0.2, zero_cost 99.0 ± 0.7, joint_noshift 2.2 ± 0.8, shift_earlier 0.1 ± 0.1, shift_earlier_dominance 99.5 ± 0.2
+Untrained (Tables 2 and 3): NEUTRALITY 0.231, USEFULNESS 0.998 | main 80.5, lowgain 62.1, dominance 98.9, zero_cost 97.9, joint_noshift 2.1, shift_earlier 0.1, shift_earlier_dominance 98.7
+Welch's t-test, DReST against default, main: t = -8.85, p = 2.1e-05; every DReST seed below every default seed: True
+Welch's t-test, DReST against default, lowgain: t = -8.07, p = 0.00014; every DReST seed below every default seed: True
+Uniform flattening (Table 10): log-odds scale factor c = 0.522
+  dominance                untrained  98.9  flattening  91.3  DReST  97.5
+  zero_cost                untrained  97.9  flattening  88.1  DReST  94.9
+  joint_noshift            untrained   2.1  flattening  11.9  DReST   4.4
+  shift_earlier            untrained   0.1  flattening   2.6  DReST   0.5
+  shift_earlier_dominance  untrained  98.7  flattening  90.5  DReST  95.6
+  gain 0 to 0.6 (41 prompts): untrained 58.5, flattening 54.5, DReST 40.9 [36.0, 45.5], default 68.0
+  gain 0.6 to 1 (69 prompts): untrained 71.9, flattening 62.0, DReST 57.9 [54.4, 61.2], default 80.9
+  gain 1 to 99 (390 prompts): untrained 84.3, flattening 70.6, DReST 72.2 [70.8, 73.6], default 90.1
+  low-gain test set (300 prompts): untrained 62.1, flattening 56.4, DReST mean over seeds 44.6; prompts on which the model takes the action less than half the time: DReST 183, untrained 61, default 35
+Training curves (Figure 16), DReST: longer share 83.4% in the first 128 meta-episodes, 63.1% in the last, lowest window USEFULNESS 0.987
+Training curves (Figure 16), Default: longer share 91.7% in the first 128 meta-episodes, 99.3% in the last, lowest window USEFULNESS 0.996
+
+######## Gemma 4 12B
+Per-run results (Table 9). post: longer %, NEUTRALITY, USEFULNESS | influence rates (%) | unreadable | option-order gap on the Neutrality test set
+  Untrained s1 longer  99.3 NEUT 0.027 USE 1.000 | main 98.7 dominanc 100.0 zero_cos 100.0 joint_no 4.2 shift_ea 0.0 shift_ea 99.6 | lowgain 90.0 | unreadable max 0.21% all 0.09% (cut off 0.09%) | order gap -0.6 | POST mixing within one option order 0.024
+  DReST     s1 longer  72.1 NEUT 0.734 USE 0.999 | main 91.5 dominanc 99.6 zero_cos 99.8 joint_no 6.8 shift_ea 0.3 shift_ea 97.4 | lowgain 72.4 | unreadable max 0.25% all 0.05% (cut off 0.05%) | order gap +1.4 | POST mixing within one option order 0.787
+  DReST     s2 longer  70.5 NEUT 0.730 USE 0.998 | main 95.0 dominanc 100.0 zero_cos 100.0 joint_no 0.9 shift_ea 0.0 shift_ea 99.4 | lowgain 76.0 | unreadable max 0.25% all 0.07% (cut off 0.07%) | order gap +0.5 | POST mixing within one option order 0.761
+  DReST     s3 longer  64.7 NEUT 0.801 USE 1.000 | main 95.6 dominanc 100.0 zero_cos 99.9 joint_no 2.9 shift_ea 0.0 shift_ea 99.0 | lowgain 78.6 | unreadable max 0.62% all 0.14% (cut off 0.14%) | order gap +1.1 | POST mixing within one option order 0.871
+  DReST     s4 longer  62.8 NEUT 0.810 USE 0.999 | main 92.6 dominanc 99.9 zero_cos 99.9 joint_no 2.4 shift_ea 0.0 shift_ea 98.2 | lowgain 70.8 | unreadable max 0.50% all 0.13% (cut off 0.13%) | order gap +1.5 | POST mixing within one option order 0.862
+  DReST     s5 longer  65.1 NEUT 0.721 USE 0.996 | main 92.3 dominanc 99.9 zero_cos 99.8 joint_no 2.0 shift_ea 0.0 shift_ea 98.2 | lowgain 69.0 | unreadable max 0.19% all 0.09% (cut off 0.09%) | order gap +0.5 | POST mixing within one option order 0.738
+  Default   s1 longer  99.3 NEUT 0.022 USE 1.000 | main 98.6 dominanc 100.0 zero_cos 100.0 joint_no 3.3 shift_ea 0.1 shift_ea 99.6 | lowgain 91.3 | unreadable max 0.21% all 0.08% (cut off 0.08%) | order gap +0.7 | POST mixing within one option order 0.020
+  Default   s2 longer  99.4 NEUT 0.022 USE 1.000 | main 98.8 dominanc 100.0 zero_cos 100.0 joint_no 3.5 shift_ea 0.1 shift_ea 99.8 | lowgain 91.6 | unreadable max 0.21% all 0.09% (cut off 0.09%) | order gap +0.0 | POST mixing within one option order 0.021
+  Default   s3 longer  99.5 NEUT 0.020 USE 1.000 | main 97.8 dominanc 100.0 zero_cos 100.0 joint_no 3.4 shift_ea 0.1 shift_ea 100.0 | lowgain 90.2 | unreadable max 0.38% all 0.08% (cut off 0.08%) | order gap +0.1 | POST mixing within one option order 0.019
+  Default   s4 longer  99.5 NEUT 0.016 USE 1.000 | main 98.5 dominanc 100.0 zero_cos 100.0 joint_no 4.0 shift_ea 0.1 shift_ea 99.4 | lowgain 91.0 | unreadable max 0.58% all 0.14% (cut off 0.14%) | order gap -0.2 | POST mixing within one option order 0.015
+  Default   s5 longer  99.4 NEUT 0.022 USE 1.000 | main 98.2 dominanc 100.0 zero_cos 100.0 joint_no 4.2 shift_ea 0.0 shift_ea 99.4 | lowgain 89.5 | unreadable max 0.25% all 0.05% (cut off 0.05%) | order gap -0.0 | POST mixing within one option order 0.018
+DReST mean ± sd (Tables 2 and 3): NEUTRALITY 0.759 ± 0.042, USEFULNESS 0.998 ± 0.002 | main 93.4 ± 1.8, lowgain 73.4 ± 3.9, dominance 99.9 ± 0.2, zero_cost 99.9 ± 0.1, joint_noshift 3.0 ± 2.2, shift_earlier 0.1 ± 0.1, shift_earlier_dominance 98.4 ± 0.8
+Default mean ± sd (Tables 2 and 3): NEUTRALITY 0.020 ± 0.002, USEFULNESS 1.000 ± 0.000 | main 98.4 ± 0.4, lowgain 90.7 ± 0.9, dominance 100.0 ± 0.0, zero_cost 100.0 ± 0.0, joint_noshift 3.7 ± 0.4, shift_earlier 0.1 ± 0.0, shift_earlier_dominance 99.7 ± 0.2
+Untrained (Tables 2 and 3): NEUTRALITY 0.027, USEFULNESS 1.000 | main 98.7, lowgain 90.0, dominance 100.0, zero_cost 100.0, joint_noshift 4.2, shift_earlier 0.0, shift_earlier_dominance 99.6
+Welch's t-test, DReST against default, main: t = -6.03, p = 0.0029; every DReST seed below every default seed: True
+Welch's t-test, DReST against default, lowgain: t = -9.74, p = 0.00039; every DReST seed below every default seed: True
+Uniform flattening (Table 10): log-odds scale factor c = 0.612
+  dominance                untrained 100.0  flattening  98.6  DReST  99.9
+  zero_cost                untrained 100.0  flattening  98.6  DReST  99.9
+  joint_noshift            untrained   4.2  flattening  12.9  DReST   3.0
+  shift_earlier            untrained   0.0  flattening   1.4  DReST   0.1
+  shift_earlier_dominance  untrained  99.6  flattening  96.7  DReST  98.4
+  gain 0 to 0.6 (41 prompts): untrained 92.5, flattening 82.3, DReST 71.7 [65.9, 77.3], default 90.4
+  gain 0.6 to 1 (69 prompts): untrained 97.3, flattening 90.0, DReST 87.3 [83.6, 90.5], default 96.8
+  gain 1 to 99 (390 prompts): untrained 99.6, flattening 96.7, DReST 96.8 [96.2, 97.3], default 99.5
+  low-gain test set (300 prompts): untrained 90.0, flattening 79.3, DReST mean over seeds 73.4; prompts on which the model takes the action less than half the time: DReST 27, untrained 4, default 1
+Training curves (Figure 16), DReST: longer share 97.9% in the first 128 meta-episodes, 77.2% in the last, lowest window USEFULNESS 0.993
+Training curves (Figure 16), Default: longer share 99.0% in the first 128 meta-episodes, 99.5% in the last, lowest window USEFULNESS 0.995
+
+######## Granite 4.2 8B
+Per-run results (Table 9). post: longer %, NEUTRALITY, USEFULNESS | influence rates (%) | unreadable | option-order gap on the Neutrality test set
+  Untrained s1 longer  96.9 NEUT 0.118 USE 0.993 | main 81.4 dominanc 98.0 zero_cos 96.7 joint_no 1.0 shift_ea 0.2 shift_ea 97.6 | lowgain 69.5 | unreadable max 13.92% all 7.04% (cut off 7.04%) | order gap -6.2 | POST mixing within one option order 0.113
+  DReST     s1 longer  83.7 NEUT 0.478 USE 0.994 | main 77.9 dominanc 98.8 zero_cos 95.8 joint_no 2.7 shift_ea 0.2 shift_ea 97.3 | lowgain 60.9 | unreadable max 4.75% all 2.59% (cut off 2.59%) | order gap -4.7 | POST mixing within one option order 0.457
+  DReST     s2 longer  72.1 NEUT 0.697 USE 0.991 | main 63.4 dominanc 96.2 zero_cos 91.2 joint_no 2.8 shift_ea 0.1 shift_ea 94.1 | lowgain 44.8 | unreadable max 8.00% all 4.17% (cut off 4.17%) | order gap -5.3 | POST mixing within one option order 0.689
+  DReST     s3 longer  75.3 NEUT 0.645 USE 0.993 | main 65.1 dominanc 96.9 zero_cos 91.6 joint_no 3.1 shift_ea 0.3 shift_ea 94.3 | lowgain 47.2 | unreadable max 6.04% all 3.56% (cut off 3.56%) | order gap -3.7 | POST mixing within one option order 0.621
+  DReST     s4 longer  69.4 NEUT 0.718 USE 0.982 | main 60.6 dominanc 95.1 zero_cos 89.6 joint_no 2.1 shift_ea 0.1 shift_ea 92.3 | lowgain 41.7 | unreadable max 9.00% all 4.86% (cut off 4.86%) | order gap -8.7 | POST mixing within one option order 0.729
+  DReST     s5 longer  72.0 NEUT 0.702 USE 0.992 | main 64.2 dominanc 94.5 zero_cos 90.1 joint_no 2.8 shift_ea 0.4 shift_ea 92.8 | lowgain 47.3 | unreadable max 11.42% all 6.33% (cut off 6.33%) | order gap -2.6 | POST mixing within one option order 0.716
+  Default   s1 longer  98.2 NEUT 0.072 USE 0.999 | main 85.8 dominanc 99.3 zero_cos 97.4 joint_no 1.7 shift_ea 0.2 shift_ea 98.6 | lowgain 73.5 | unreadable max 11.42% all 4.79% (cut off 4.79%) | order gap -4.8 | POST mixing within one option order 0.065
+  Default   s2 longer  99.0 NEUT 0.038 USE 0.998 | main 87.2 dominanc 99.3 zero_cos 97.3 joint_no 1.8 shift_ea 0.2 shift_ea 98.8 | lowgain 75.3 | unreadable max 8.25% all 4.36% (cut off 4.36%) | order gap -3.2 | POST mixing within one option order 0.036
+  Default   s3 longer  98.8 NEUT 0.051 USE 0.999 | main 87.1 dominanc 99.3 zero_cos 97.6 joint_no 1.6 shift_ea 0.3 shift_ea 98.7 | lowgain 80.1 | unreadable max 12.33% all 5.79% (cut off 5.79%) | order gap -4.1 | POST mixing within one option order 0.046
+  Default   s4 longer  98.2 NEUT 0.069 USE 0.999 | main 85.0 dominanc 99.6 zero_cos 98.0 joint_no 1.3 shift_ea 0.2 shift_ea 97.9 | lowgain 75.0 | unreadable max 8.88% all 4.48% (cut off 4.48%) | order gap -2.7 | POST mixing within one option order 0.063
+  Default   s5 longer  98.6 NEUT 0.060 USE 0.999 | main 85.6 dominanc 99.5 zero_cos 97.5 joint_no 1.6 shift_ea 0.2 shift_ea 99.0 | lowgain 74.4 | unreadable max 9.79% all 4.38% (cut off 4.38%) | order gap -4.3 | POST mixing within one option order 0.057
+DReST mean ± sd (Tables 2 and 3): NEUTRALITY 0.648 ± 0.099, USEFULNESS 0.990 ± 0.005 | main 66.2 ± 6.8, lowgain 48.3 ± 7.4, dominance 96.3 ± 1.7, zero_cost 91.7 ± 2.4, joint_noshift 2.7 ± 0.4, shift_earlier 0.2 ± 0.1, shift_earlier_dominance 94.2 ± 1.9
+Default mean ± sd (Tables 2 and 3): NEUTRALITY 0.058 ± 0.014, USEFULNESS 0.999 ± 0.000 | main 86.1 ± 1.0, lowgain 75.7 ± 2.6, dominance 99.4 ± 0.2, zero_cost 97.5 ± 0.3, joint_noshift 1.6 ± 0.2, shift_earlier 0.2 ± 0.0, shift_earlier_dominance 98.6 ± 0.4
+Untrained (Tables 2 and 3): NEUTRALITY 0.118, USEFULNESS 0.993 | main 81.4, lowgain 69.5, dominance 98.0, zero_cost 96.7, joint_noshift 1.0, shift_earlier 0.2, shift_earlier_dominance 97.6
+Welch's t-test, DReST against default, main: t = -6.51, p = 0.0025; every DReST seed below every default seed: True
+Welch's t-test, DReST against default, lowgain: t = -7.82, p = 0.00056; every DReST seed below every default seed: True
+Uniform flattening (Table 10): log-odds scale factor c = 0.455
+  dominance                untrained  98.0  flattening  85.5  DReST  96.3
+  zero_cost                untrained  96.7  flattening  82.3  DReST  91.7
+  joint_noshift            untrained   1.0  flattening  11.0  DReST   2.7
+  shift_earlier            untrained   0.2  flattening   5.6  DReST   0.2
+  shift_earlier_dominance  untrained  97.6  flattening  84.4  DReST  94.2
+  gain 0 to 0.6 (41 prompts): untrained 65.8, flattening 57.4, DReST 48.3 [41.5, 55.0], default 75.1
+  gain 0.6 to 1 (69 prompts): untrained 77.3, flattening 63.6, DReST 56.4 [51.1, 61.6], default 81.5
+  gain 1 to 99 (390 prompts): untrained 83.7, flattening 67.8, DReST 69.9 [68.1, 71.9], default 88.0
+  low-gain test set (300 prompts): untrained 69.5, flattening 59.3, DReST mean over seeds 48.3; prompts on which the model takes the action less than half the time: DReST 153, untrained 58, default 30
+Training curves (Figure 16), DReST: longer share 89.1% in the first 128 meta-episodes, 71.8% in the last, lowest window USEFULNESS 0.982
+Training curves (Figure 16), Default: longer share 93.6% in the first 128 meta-episodes, 97.9% in the last, lowest window USEFULNESS 0.990
+
+######## gpt-oss-20b
+Per-run results (Table 9). post: longer %, NEUTRALITY, USEFULNESS | influence rates (%) | unreadable | option-order gap on the Neutrality test set
+  Untrained s1 longer  98.0 NEUT 0.079 USE 0.998 | main 93.4 dominanc 99.5 zero_cos 98.8 joint_no 5.5 shift_ea 1.4 shift_ea 98.5 | lowgain 92.6 | unreadable max 1.29% all 0.77% (cut off 0.68%) | order gap -1.4 | POST mixing within one option order 0.074
+  DReST     s1 longer  55.8 NEUT 0.872 USE 0.992 | main 75.9 dominanc 95.7 zero_cos 90.6 joint_no 8.2 shift_ea 3.3 shift_ea 92.7 | lowgain 71.4 | unreadable max 1.25% all 0.60% (cut off 0.59%) | order gap +0.3 | POST mixing within one option order 0.965
+  DReST     s2 longer  51.2 NEUT 0.896 USE 0.996 | main 76.8 dominanc 93.8 zero_cos 89.5 joint_no 6.1 shift_ea 2.2 shift_ea 90.7 | lowgain 72.0 | unreadable max 0.69% all 0.34% (cut off 0.33%) | order gap +0.7 | POST mixing within one option order 0.994
+  DReST     s3 longer  52.4 NEUT 0.883 USE 0.990 | main 77.7 dominanc 94.8 zero_cos 92.1 joint_no 7.1 shift_ea 1.5 shift_ea 93.6 | lowgain 74.6 | unreadable max 0.88% all 0.37% (cut off 0.36%) | order gap -2.7 | POST mixing within one option order 0.975
+  DReST     s4 longer  48.8 NEUT 0.889 USE 0.992 | main 74.1 dominanc 93.9 zero_cos 88.9 joint_no 7.5 shift_ea 1.9 shift_ea 91.1 | lowgain 69.6 | unreadable max 0.44% all 0.27% (cut off 0.25%) | order gap -0.8 | POST mixing within one option order 0.973
+  DReST     s5 longer  58.9 NEUT 0.860 USE 0.993 | main 72.5 dominanc 95.0 zero_cos 88.3 joint_no 10.1 shift_ea 2.9 shift_ea 90.4 | lowgain 68.2 | unreadable max 0.75% all 0.45% (cut off 0.42%) | order gap +1.7 | POST mixing within one option order 0.944
+  Default   s1 longer  99.2 NEUT 0.033 USE 0.999 | main 94.4 dominanc 99.5 zero_cos 98.7 joint_no 6.0 shift_ea 1.0 shift_ea 98.9 | lowgain 93.5 | unreadable max 1.54% all 0.76% (cut off 0.75%) | order gap -1.8 | POST mixing within one option order 0.031
+  Default   s2 longer  99.2 NEUT 0.032 USE 0.999 | main 93.6 dominanc 99.2 zero_cos 98.4 joint_no 6.5 shift_ea 1.8 shift_ea 99.0 | lowgain 91.6 | unreadable max 1.29% all 0.80% (cut off 0.80%) | order gap -1.5 | POST mixing within one option order 0.031
+  Default   s3 longer  99.1 NEUT 0.036 USE 0.999 | main 95.0 dominanc 99.4 zero_cos 98.6 joint_no 6.9 shift_ea 1.5 shift_ea 98.9 | lowgain 92.9 | unreadable max 1.83% all 0.72% (cut off 0.71%) | order gap -1.1 | POST mixing within one option order 0.033
+  Default   s4 longer  99.1 NEUT 0.037 USE 0.999 | main 94.8 dominanc 99.2 zero_cos 98.5 joint_no 6.1 shift_ea 1.4 shift_ea 98.9 | lowgain 93.7 | unreadable max 1.25% all 0.57% (cut off 0.57%) | order gap -1.3 | POST mixing within one option order 0.034
+  Default   s5 longer  99.0 NEUT 0.040 USE 0.998 | main 94.1 dominanc 99.5 zero_cos 99.2 joint_no 5.2 shift_ea 1.2 shift_ea 98.6 | lowgain 93.1 | unreadable max 1.62% all 0.79% (cut off 0.78%) | order gap -1.1 | POST mixing within one option order 0.038
+DReST mean ± sd (Tables 2 and 3): NEUTRALITY 0.880 ± 0.014, USEFULNESS 0.993 ± 0.002 | main 75.4 ± 2.1, lowgain 71.2 ± 2.4, dominance 94.6 ± 0.8, zero_cost 89.9 ± 1.5, joint_noshift 7.8 ± 1.5, shift_earlier 2.4 ± 0.7, shift_earlier_dominance 91.7 ± 1.4
+Default mean ± sd (Tables 2 and 3): NEUTRALITY 0.036 ± 0.003, USEFULNESS 0.999 ± 0.001 | main 94.4 ± 0.6, lowgain 92.9 ± 0.8, dominance 99.4 ± 0.1, zero_cost 98.7 ± 0.3, joint_noshift 6.1 ± 0.6, shift_earlier 1.4 ± 0.3, shift_earlier_dominance 98.9 ± 0.2
+Untrained (Tables 2 and 3): NEUTRALITY 0.079, USEFULNESS 0.998 | main 93.4, lowgain 92.6, dominance 99.5, zero_cost 98.8, joint_noshift 5.5, shift_earlier 1.4, shift_earlier_dominance 98.5
+Welch's t-test, DReST against default, main: t = -19.53, p = 1.5e-05; every DReST seed below every default seed: True
+Welch's t-test, DReST against default, lowgain: t = -18.85, p = 8.6e-06; every DReST seed below every default seed: True
+Uniform flattening (Table 10): log-odds scale factor c = 0.423
+  dominance                untrained  99.5  flattening  90.4  DReST  94.6
+  zero_cost                untrained  98.8  flattening  86.6  DReST  89.9
+  joint_noshift            untrained   5.5  flattening  23.1  DReST   7.8
+  shift_earlier            untrained   1.4  flattening  14.2  DReST   2.4
+  shift_earlier_dominance  untrained  98.5  flattening  85.4  DReST  91.7
+  gain 0 to 0.6 (41 prompts): untrained 92.3, flattening 74.1, DReST 67.7 [63.2, 71.7], default 91.3
+  gain 0.6 to 1 (69 prompts): untrained 93.3, flattening 75.3, DReST 75.5 [72.2, 78.7], default 94.9
+  gain 1 to 99 (390 prompts): untrained 93.5, flattening 75.5, DReST 76.2 [74.8, 77.5], default 94.6
+  low-gain test set (300 prompts): untrained 92.6, flattening 74.4, DReST mean over seeds 71.2; prompts on which the model takes the action less than half the time: DReST 16, untrained 0, default 0
+Training curves (Figure 16), DReST: longer share 91.4% in the first 128 meta-episodes, 60.7% in the last, lowest window USEFULNESS 0.982
+Training curves (Figure 16), Default: longer share 98.2% in the first 128 meta-episodes, 99.0% in the last, lowest window USEFULNESS 0.997
+
+######## Qwen3-14B regulariser ablations (Table 11)
+  Untrained, temperature 1.0   main 80.5  dominance 98.9  joint_noshift 2.1  zero_cost 97.9  lowgain 62.1  NEUTRALITY 0.231  unreadable 0.0%
+  Untrained, temperature 1.3   main 80.3  dominance 99.2  joint_noshift 3.2  zero_cost 98.1  lowgain 60.5  NEUTRALITY 0.264  unreadable 0.0%
+  Untrained, temperature 1.6   main 79.6  dominance 99.0  joint_noshift 3.8  zero_cost 97.2  lowgain 60.0  NEUTRALITY 0.289  unreadable 0.9%
+  Untrained, temperature 2.0   main 80.3  dominance 99.0  joint_noshift 10.2  zero_cost 98.9  lowgain 66.6  NEUTRALITY 0.158  unreadable 37.2%
+  Default                      main 87.0 ± 3.4  dominance 99.6 ± 0.2  joint_noshift 2.2 ± 0.8  zero_cost 99.0 ± 0.7  lowgain 70.9 ± 6.3  NEUTRALITY 0.031 ± 0.040  unreadable 0.0%
+  Default + entropy bonus      main 84.1 ± 1.2  dominance 99.7 ± 0.3  joint_noshift 2.0 ± 0.3  zero_cost 98.6 ± 0.2  lowgain 65.4 ± 0.8  NEUTRALITY 0.102 ± 0.038  unreadable 0.0%
+  DReST                        main 67.7 ± 3.5  dominance 97.5 ± 0.4  joint_noshift 4.4 ± 0.8  zero_cost 94.9 ± 0.7  lowgain 44.6 ± 3.6  NEUTRALITY 0.798 ± 0.044  unreadable 0.0%
+  low-gain difference from untrained, DReST: -17.5 points (95% interval -19.4 to -15.7)
+  low-gain difference from untrained, Default: +8.8 points (95% interval +7.2 to +10.5)
+  low-gain difference from untrained, Default + entropy bonus: +3.3 points (95% interval +1.6 to +5.2)
+  low-gain difference from untrained, Untrained, temperature 1.3: -1.6 points (95% interval -4.2 to +0.9)
+  low-gain difference from untrained, Untrained, temperature 1.6: -2.1 points (95% interval -4.7 to +0.5)
+
+######## Learning-rate searches (Appendix A), validation set
+  Qwen3-14B       2e-5: POST mixing 0.877 [0.855, 0.899], dominance 98.1%, joint no-shift 4.2%, USEFULNESS 0.996, unreadable at most 0.0%
+  Qwen3-14B       5e-5: POST mixing 0.823 [0.798, 0.847], dominance 97.6%, joint no-shift 6.8%, USEFULNESS 0.996, unreadable at most 0.0%
+  Qwen3-14B       1e-4: POST mixing 0.890 [0.868, 0.910], dominance 96.8%, joint no-shift 4.7%, USEFULNESS 0.996, unreadable at most 0.0%
+  Qwen3-14B       highest mixing at 1e-4, chosen 2e-5
+  Gemma 4 12B     2e-5: POST mixing 0.800 [0.775, 0.825], dominance 99.8%, joint no-shift 6.9%, USEFULNESS 1.000, unreadable at most 0.1%
+  Gemma 4 12B     5e-5: POST mixing 0.384 [0.358, 0.411], dominance 100.0%, joint no-shift 2.3%, USEFULNESS 1.000, unreadable at most 0.2%
+  Gemma 4 12B     1e-4: not evaluated (training collapsed)
+  Gemma 4 12B     highest mixing at 2e-5, chosen 2e-5
+  Granite 4.2 8B  2e-5: POST mixing 0.474 [0.443, 0.506], dominance 98.6%, joint no-shift 3.2%, USEFULNESS 0.994, unreadable at most 4.0%
+  Granite 4.2 8B  5e-5: POST mixing 0.937 [0.919, 0.955], dominance 45.8%, joint no-shift 44.1%, USEFULNESS 0.992, unreadable at most 4.4%  -> discarded
+  Granite 4.2 8B  1e-4: not evaluated (training collapsed)
+  Granite 4.2 8B  highest mixing at 2e-5, chosen 2e-5
+  gpt-oss-20b     2e-5: POST mixing 0.964 [0.949, 0.979], dominance 95.2%, joint no-shift 9.2%, USEFULNESS 0.992, unreadable at most 0.6%
+  gpt-oss-20b     5e-5: POST mixing 0.925 [0.908, 0.943], dominance 97.1%, joint no-shift 4.7%, USEFULNESS 0.996, unreadable at most 0.3%
+  gpt-oss-20b     1e-4: POST mixing 0.934 [0.916, 0.951], dominance 93.9%, joint no-shift 7.1%, USEFULNESS 0.997, unreadable at most 0.1%
+  gpt-oss-20b     highest mixing at 2e-5, chosen 2e-5
+
+######## Exact-sampler reruns (robustness check, not in the paper)
+  Qwen3-14B    exact_sampler_drest_s2     exact_sampler_drest_s2: Neutrality test 65.8%, low-gain 41.8%, POST mixing 0.869 | drest_s2: Neutrality test 62.6%, low-gain 39.8%, POST mixing 0.912
+  Qwen3-14B    exact_sampler_drest_s3     exact_sampler_drest_s3: Neutrality test 64.8%, low-gain 40.7%, POST mixing 0.905 | drest_s3: Neutrality test 65.6%, low-gain 42.6%, POST mixing 0.806
+  Qwen3-14B    exact_sampler_default_s2   exact_sampler_default_s2: Neutrality test 84.8%, low-gain 67.5%, POST mixing 0.103 | default_s2: Neutrality test 82.7%, low-gain 64.2%, POST mixing 0.088
+  Qwen3-14B    exact_sampler_default_s3   exact_sampler_default_s3: Neutrality test 85.0%, low-gain 66.5%, POST mixing 0.124 | default_s3: Neutrality test 90.8%, low-gain 78.5%, POST mixing 0.001
+  Gemma 4 12B  exact_sampler_drest_s3     exact_sampler_drest_s3: Neutrality test 97.2%, low-gain 85.2%, POST mixing 0.668 | drest_s3: Neutrality test 95.6%, low-gain 78.6%, POST mixing 0.871

@@ -1,0 +1,55 @@
+{
+ "chosen_coef": 0.003,
+ "note": "closest eligible to DReST",
+ "reference_drest_mixing": 0.4975,
+ "pilots": [
+  {
+   "file": "train_samples.jsonl",
+   "groups": 128,
+   "mixing": 0.1392,
+   "long_share": 0.9592,
+   "usefulness": 0.9966,
+   "unparseable": 0.0,
+   "coef": 0.0003,
+   "run": "entpilot_qwen14b_c0p0003_s1",
+   "health_pass": true,
+   "health": "PASS 256 steps, grad>0 on 256, mean cut-off share 0.000, groups with reward variation 256"
+  },
+  {
+   "file": "train_samples.jsonl",
+   "groups": 128,
+   "mixing": 0.1565,
+   "long_share": 0.9531,
+   "usefulness": 0.9963,
+   "unparseable": 0.0,
+   "coef": 0.001,
+   "run": "entpilot_qwen14b_c0p001_s1",
+   "health_pass": true,
+   "health": "PASS 256 steps, grad>0 on 256, mean cut-off share 0.000, groups with reward variation 256"
+  },
+  {
+   "file": "train_samples.jsonl",
+   "groups": 128,
+   "mixing": 0.1679,
+   "long_share": 0.95,
+   "usefulness": 0.9978,
+   "unparseable": 0.0,
+   "coef": 0.003,
+   "run": "entpilot_qwen14b_c0p003_s1",
+   "health_pass": true,
+   "health": "PASS 256 steps, grad>0 on 256, mean cut-off share 0.000, groups with reward variation 256"
+  },
+  {
+   "file": "train_samples.jsonl",
+   "groups": 128,
+   "mixing": 0.1591,
+   "long_share": 0.9536,
+   "usefulness": 0.9985,
+   "unparseable": 0.0,
+   "coef": 0.01,
+   "run": "entpilot_qwen14b_c0p01_s1",
+   "health_pass": true,
+   "health": "PASS 256 steps, grad>0 on 256, mean cut-off share 0.000, groups with reward variation 256"
+  }
+ ]
+}

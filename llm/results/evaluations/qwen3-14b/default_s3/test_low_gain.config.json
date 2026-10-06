@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "n_samples": 4,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_new_tokens": 320,
+  "seed": 20260908,
+  "enable_thinking": false,
+  "chat_kwargs": null,
+  "pin_chat_date": null,
+  "merge_adapter": null,
+  "max_model_len": 2048,
+  "dtype": "bfloat16",
+  "adapter": "final adapter of training run default_s3"
+}

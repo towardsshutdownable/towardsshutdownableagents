@@ -1,0 +1,9 @@
+# Results of the LLM runs reported in the paper
+
+- `evaluations/<llm>/<model>/<set>.jsonl.gz`: every sampled answer's parsed decision (not its text), one JSON object per line: `suite`, `display_id` and `scenario_id` (which prompt in `data/<set>/`), `sample_index`, `decision` (`shift` = took the action, `no_shift`, or null if unreadable) or `position` (the chosen option of a POST prompt), the parse `strategy`, `finish_reason` (`length` means the answer hit the 320-token cap), and `n_completion_tokens`. `<set>.config.json` holds the evaluation settings.
+- `training/<llm>/<model>/`: `run_config.json`, `training_curve.json` (per window of 128 meta-episodes: share of readable answers choosing the longer trajectory-length, USEFULNESS, mean reward, unreadable answers), and `train_log_steps.jsonl.gz` (TRL's log for each of the 2,048 updates, including `grad_norm` before clipping).
+- `decisions/`: the learning-rate decisions (Gemma 4 12B, Granite 4.2 8B, gpt-oss-20b) and the entropy-coefficient decision (Qwen3-14B). The Qwen3-14B learning-rate decision is described in `../README.md`.
+- `runs.json`: the internal run and evaluation names behind each public name, and the number of answers in each evaluation.
+- `paper_numbers.txt` and `paper_numbers.json`: written by `scripts/reproduce_paper_numbers.py`. `figures/`: written by `scripts/make_figures.py`.
+
+Model names: `untrained`, `drest_s1` to `drest_s5`, `default_s1` to `default_s5`, `lr_search_<rate>` (DReST seed 1 at another learning rate, validation set only), and for Qwen3-14B `untrained_temperature_<t>`, `entropy_bonus_s1` to `entropy_bonus_s3`, `exact_sampler_drest_s2`, `exact_sampler_drest_s3`, `exact_sampler_default_s2`, and `exact_sampler_default_s3`. Gemma 4 12B also has `exact_sampler_drest_s3`. The exact-sampler runs are reruns of the same seeds in which the training sampler used the adapter directly instead of a copy rounded to 16-bit weights (see `../README.md`).

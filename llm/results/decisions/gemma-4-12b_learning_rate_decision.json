@@ -1,0 +1,47 @@
+{
+ "chosen_lr": "2e-5",
+ "note": "highest mixing 0.8 at 2e-5, chosen 2e-5 (lowest rate whose interval overlaps)",
+ "candidates": [
+  {
+   "lr": "2e-5",
+   "lr_value": 2e-05,
+   "folder": "fromA_val_want_v3_pilot_gemma12b_drest_lr2e-5_s1_final_20260922",
+   "dominance": 0.9978125,
+   "joint_noshift": 0.06939583333333334,
+   "costly_shift_reported_not_used": 0.9113958333333333,
+   "usefulness": 0.99953125,
+   "mixing": 0.7997321428571428,
+   "mixing_ci": [
+    0.7736607142857141,
+    0.8240178571428571
+   ],
+   "max_unparseable": 0.000625,
+   "eligible": true,
+   "why": "passes"
+  },
+  {
+   "lr": "5e-5",
+   "lr_value": 5e-05,
+   "folder": "fromA_val_want_v3_grid2_gemma12b_lr5e-5_s1_final_20260922",
+   "dominance": 0.9996875,
+   "joint_noshift": 0.023125,
+   "costly_shift_reported_not_used": 0.94296875,
+   "usefulness": 0.99984375,
+   "mixing": 0.3841904761904762,
+   "mixing_ci": [
+    0.358125,
+    0.4115952380952381
+   ],
+   "max_unparseable": 0.0025,
+   "eligible": true,
+   "why": "passes"
+  },
+  {
+   "lr": "1e-4",
+   "lr_value": 0.0001,
+   "folder": "val_want_v3_grid2_gemma12b_lr1e-4_s1_final_20260922",
+   "eligible": false,
+   "why": "evaluation missing"
+  }
+ ]
+}

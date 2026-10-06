@@ -1,0 +1,784 @@
+{
+ "qwen3-14b": {
+  "untrained": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_qwen14b_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_qwen14b_20260922",
+    "answers": 2400
+   },
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_untrained_qwen14b_20260922",
+    "answers": 28800
+   }
+  },
+  "drest_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_grid_qwen14b_lr2e-5_s1_epoch1_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_grid_qwen14b_lr2e-5_s1_epoch1_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "grid_qwen14b_lr2e-5_s1"
+   }
+  },
+  "drest_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_drest_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_drest_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_drest_lr2e-5_s2"
+   }
+  },
+  "drest_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_drest_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_drest_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_drest_lr2e-5_s3"
+   }
+  },
+  "drest_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_drest_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_drest_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_drest_lr2e-5_s4"
+   }
+  },
+  "drest_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_drest_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_drest_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_drest_lr2e-5_s5"
+   }
+  },
+  "default_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_ordinary_lr2e-5_s1"
+   }
+  },
+  "default_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_ordinary_lr2e-5_s2"
+   }
+  },
+  "default_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_ordinary_lr2e-5_s3"
+   }
+  },
+  "default_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_ordinary_lr2e-5_s4"
+   }
+  },
+  "default_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_ordinary_lr2e-5_s5"
+   }
+  },
+  "lr_search_2e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_qwen14b_lr2e-5_s1_epoch1_20260922",
+    "answers": 28800
+   }
+  },
+  "lr_search_5e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_qwen14b_lr5e-5_s1_epoch1_20260922",
+    "answers": 28800
+   }
+  },
+  "lr_search_1e-4": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_qwen14b_lr1e-4_s1_epoch1_20260922",
+    "answers": 28800
+   }
+  },
+  "untrained_temperature_1.3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_qwen14b_T1p3_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_qwen14b_T1p3_20260922",
+    "answers": 2400
+   }
+  },
+  "untrained_temperature_1.6": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_qwen14b_T1p6_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_qwen14b_T1p6_20260922",
+    "answers": 2400
+   }
+  },
+  "untrained_temperature_2.0": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_qwen14b_T2p0_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_qwen14b_T2p0_20260922",
+    "answers": 2400
+   }
+  },
+  "entropy_bonus_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_entropy_c0p003_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_entropy_c0p003_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_entropy_c0p003_lr2e-5_s1"
+   }
+  },
+  "entropy_bonus_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_entropy_c0p003_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_entropy_c0p003_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_entropy_c0p003_lr2e-5_s2"
+   }
+  },
+  "entropy_bonus_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_qwen14b_entropy_c0p003_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_qwen14b_entropy_c0p003_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_qwen14b_entropy_c0p003_lr2e-5_s3"
+   }
+  },
+  "exact_sampler_drest_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_exact_qwen14b_drest_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_exact_qwen14b_drest_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "exact_qwen14b_drest_lr2e-5_s2"
+   }
+  },
+  "exact_sampler_drest_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_exact_qwen14b_drest_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_exact_qwen14b_drest_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "exact_qwen14b_drest_lr2e-5_s3"
+   }
+  },
+  "exact_sampler_default_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_exact_qwen14b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_exact_qwen14b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "exact_qwen14b_ordinary_lr2e-5_s2"
+   }
+  },
+  "exact_sampler_default_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_exact_qwen14b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_exact_qwen14b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "exact_qwen14b_ordinary_lr2e-5_s3"
+   }
+  },
+  "_model": "Qwen/Qwen3-14B"
+ },
+ "gemma-4-12b": {
+  "untrained": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_gemma4_12b_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_gemma4_12b_20260922",
+    "answers": 2400
+   },
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_untrained_gemma4_12b_20260922",
+    "answers": 28800
+   }
+  },
+  "drest_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_pilot_gemma12b_drest_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_pilot_gemma12b_drest_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "pilot_gemma12b_drest_lr2e-5_s1"
+   }
+  },
+  "drest_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_drest_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_drest_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_drest_lr2e-5_s2"
+   }
+  },
+  "drest_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_drest_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_drest_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_drest_lr2e-5_s3"
+   }
+  },
+  "drest_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_drest_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_drest_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_drest_lr2e-5_s4"
+   }
+  },
+  "drest_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_drest_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_drest_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_drest_lr2e-5_s5"
+   }
+  },
+  "default_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_pilot_gemma12b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_pilot_gemma12b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "pilot_gemma12b_ordinary_lr2e-5_s1"
+   }
+  },
+  "default_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_ordinary_lr2e-5_s2"
+   }
+  },
+  "default_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_ordinary_lr2e-5_s3"
+   }
+  },
+  "default_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_ordinary_lr2e-5_s4"
+   }
+  },
+  "default_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gemma12b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gemma12b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gemma12b_ordinary_lr2e-5_s5"
+   }
+  },
+  "lr_search_2e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_pilot_gemma12b_drest_lr2e-5_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "lr_search_5e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid2_gemma12b_lr5e-5_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "exact_sampler_drest_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_exact_gemma12b_drest_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_exact_gemma12b_drest_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "exact_gemma12b_drest_lr2e-5_s3"
+   }
+  },
+  "_model": "google/gemma-4-12B-it"
+ },
+ "granite-4.2-8b": {
+  "untrained": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_granite42_8b_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_granite42_8b_20260922",
+    "answers": 2400
+   },
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_untrained_granite42_8b_20260922",
+    "answers": 28800
+   }
+  },
+  "drest_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_grid_granite8b_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_grid_granite8b_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "grid_granite8b_lr2e-5_s1"
+   }
+  },
+  "drest_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_drest_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_drest_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_drest_lr2e-5_s2"
+   }
+  },
+  "drest_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_drest_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_drest_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_drest_lr2e-5_s3"
+   }
+  },
+  "drest_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_drest_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_drest_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_drest_lr2e-5_s4"
+   }
+  },
+  "drest_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_drest_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_drest_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_drest_lr2e-5_s5"
+   }
+  },
+  "default_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_ordinary_lr2e-5_s1"
+   }
+  },
+  "default_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_ordinary_lr2e-5_s2"
+   }
+  },
+  "default_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_ordinary_lr2e-5_s3"
+   }
+  },
+  "default_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_ordinary_lr2e-5_s4"
+   }
+  },
+  "default_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_granite8b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_granite8b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_granite8b_ordinary_lr2e-5_s5"
+   }
+  },
+  "lr_search_2e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_granite8b_lr2e-5_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "lr_search_5e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_granite8b_lr5e-5_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "_model": "ibm-granite/granite-4.2-8b"
+ },
+ "gpt-oss-20b": {
+  "untrained": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_untrained_gptoss20b_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_untrained_gptoss20b_20260922",
+    "answers": 2400
+   },
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_untrained_gptoss20b_20260922",
+    "answers": 28800
+   }
+  },
+  "drest_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_grid_gptoss20b_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_grid_gptoss20b_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "grid_gptoss20b_lr2e-5_s1"
+   }
+  },
+  "drest_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_drest_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_drest_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_drest_lr2e-5_s2"
+   }
+  },
+  "drest_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_drest_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_drest_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_drest_lr2e-5_s3"
+   }
+  },
+  "drest_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_drest_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_drest_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_drest_lr2e-5_s4"
+   }
+  },
+  "drest_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_drest_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_drest_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_drest_lr2e-5_s5"
+   }
+  },
+  "default_s1": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_ordinary_lr2e-5_s1_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_ordinary_lr2e-5_s1"
+   }
+  },
+  "default_s2": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_ordinary_lr2e-5_s2_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_ordinary_lr2e-5_s2"
+   }
+  },
+  "default_s3": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_ordinary_lr2e-5_s3_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_ordinary_lr2e-5_s3"
+   }
+  },
+  "default_s4": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_ordinary_lr2e-5_s4_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_ordinary_lr2e-5_s4"
+   }
+  },
+  "default_s5": {
+   "test": {
+    "internal_evaluation_folder": "test_want_v3_conf_gptoss20b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 16000
+   },
+   "test_low_gain": {
+    "internal_evaluation_folder": "test_lowgain_want_v1_conf_gptoss20b_ordinary_lr2e-5_s5_final_20260922",
+    "answers": 2400
+   },
+   "training": {
+    "internal_run": "conf_gptoss20b_ordinary_lr2e-5_s5"
+   }
+  },
+  "lr_search_2e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_gptoss20b_lr2e-5_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "lr_search_5e-5": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_gptoss20b_lr5e-5_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "lr_search_1e-4": {
+   "validation": {
+    "internal_evaluation_folder": "val_want_v3_grid_gptoss20b_lr1e-4_s1_final_20260922",
+    "answers": 28800
+   }
+  },
+  "_model": "openai/gpt-oss-20b"
+ }
+}

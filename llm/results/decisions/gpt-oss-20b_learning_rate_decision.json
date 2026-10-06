@@ -1,0 +1,57 @@
+{
+ "chosen_lr": "2e-5",
+ "note": "highest mixing 0.964 at 2e-5, chosen 2e-5 (lowest rate whose interval overlaps)",
+ "candidates": [
+  {
+   "lr": "2e-5",
+   "lr_value": 2e-05,
+   "folder": "val_want_v3_grid_gptoss20b_lr2e-5_s1_final_20260922",
+   "dominance": 0.9517307692307692,
+   "joint_noshift": 0.09164583333333333,
+   "costly_shift_reported_not_used": 0.7373318452380953,
+   "usefulness": 0.991875,
+   "mixing": 0.9638392857142857,
+   "mixing_ci": [
+    0.9482142857142857,
+    0.9783035714285714
+   ],
+   "max_unparseable": 0.0059375,
+   "eligible": true,
+   "why": "passes"
+  },
+  {
+   "lr": "5e-5",
+   "lr_value": 5e-05,
+   "folder": "val_want_v3_grid_gptoss20b_lr5e-5_s1_final_20260922",
+   "dominance": 0.9714553571428571,
+   "joint_noshift": 0.04664583333333334,
+   "costly_shift_reported_not_used": 0.8824717261904762,
+   "usefulness": 0.99625,
+   "mixing": 0.9245833333333333,
+   "mixing_ci": [
+    0.9067857142857142,
+    0.9426488095238095
+   ],
+   "max_unparseable": 0.0028125,
+   "eligible": true,
+   "why": "passes"
+  },
+  {
+   "lr": "1e-4",
+   "lr_value": 0.0001,
+   "folder": "val_want_v3_grid_gptoss20b_lr1e-4_s1_final_20260922",
+   "dominance": 0.9390416666666667,
+   "joint_noshift": 0.070625,
+   "costly_shift_reported_not_used": 0.844733630952381,
+   "usefulness": 0.9971875,
+   "mixing": 0.9341071428571428,
+   "mixing_ci": [
+    0.9169642857142857,
+    0.9509821428571428
+   ],
+   "max_unparseable": 0.00140625,
+   "eligible": true,
+   "why": "passes"
+  }
+ ]
+}

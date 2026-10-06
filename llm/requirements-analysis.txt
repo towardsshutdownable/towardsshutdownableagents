@@ -1,0 +1,4 @@
+# Enough to rebuild the data sets, recompute every LLM number in the paper, draw the figures, and run the tests (no GPU).
+scipy
+matplotlib
+pytest
