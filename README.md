@@ -20,7 +20,7 @@ python -m pytest tests                      # includes rebuilding every LLM data
 
 ## Full model answers
 
-The full text of every sampled answer, in training and in evaluation, is too large for this repository (650 MB compressed). It is available as two archives, `llm_evaluation_answers.tar.gz` and `llm_training_answers.tar.gz`, laid out with the same names as `llm/results/`: LINK TO BE ADDED.
+The full text of every sampled answer, in training and in evaluation, is too large for this repository (650 MB compressed). It is available as two archives, `llm_evaluation_answers.tar.gz` and `llm_training_answers.tar.gz`, laid out with the same names as `llm/results/`. Download them from the [full-answers release](https://github.com/towardsshutdownable/towardsshutdownableagents/releases/tag/full-answers-20261006), which also has their checksums.
 
 ## License
 
